@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <link rel="stylesheet" href="../stycss/stile.css">
+        <link rel="icon" href="../images/logopoke.png" type="image/png">
+        <title>pokae party</title>
+        <style>
+            /* BODY */
+            body {
+            margin: 0;
+            padding: 0;
+            font-weight: 600;
+            background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+            url('../images/sfondicchio_og.png');
+            background-attachment: fixed;
+            }
+            /* MAIN : tutta la pagina */
+            main {
+            flex: 1;
+            min-height: 911px;
+            padding: 20px;
+            }
+
+            /* .IMAGES : immagini all'interno dei contenitori */
+            .images {
+            height: 100%;
+            }
+            /* a : carattere  */a {
+            text-decoration: none;
+            }
+            /* CURSORE CODICE PER TUTTO SITO */
+            html, body, a, button, input[type="submit"], input[type="button"], [role="button"] {
+                cursor: url('../images/foodino.cur'), default !important;
+            }
+
+            #aboutus_card {
+                border: 1px solid rgba(254, 201, 201, 0.2);
+                background-color: rgba(140, 60, 60, 0.55);
+                border-radius: 15px;
+                transition: none;
+                height: 820px;
+                width: 800px;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center; 
+                justify-content: center; 
+                text-align: center;
+                animation: pulso 7s infinite alternate ease-in-out;
+                position: relative;
+            }
+            
+            @keyframes pulso {
+                0%, 100% {
+                box-shadow: 0 0 5px rgba(140, 60, 60, 0.25),
+                0 0 10px rgba(140, 60, 60, 0.2);
+                }
+                50% {
+                box-shadow: 0 0 5px rgba(140, 60, 60, 0.25),
+                0 0 10px rgba(140, 60, 60, 0.2),
+                0 0 20px rgba(140, 60, 60, 0.3),
+                0 0 35px rgba(140, 60, 60, 0.4);
+                }
+            }
+
+            #aboutus_tit {
+                margin: 20px auto;
+                letter-spacing: 0.3vh;
+                font-size: 50px;
+                text-shadow:
+                    0 0 5px rgba(223, 223, 223, 0.15),
+                    0 0 20px rgba(223, 223, 223, 0.05);
+            }
+            #aboutus_img {
+                margin: 0;
+                height: 300px;
+            }
+            #aboutus_text {
+                color: #dfdfdf;
+                font-family: "Avenir Next Ultra Light";
+                letter-spacing: 0.13vh;
+                font-size: 18px;
+                text-align: center;
+                padding: 5px;
+                margin: 20px 50px 45px 50px;
+            }
+            #aboutus_contatti {
+                color: #dfdfdf;
+                font-family: "Avenir Next Ultra Light";
+                letter-spacing: 0.13vh;
+                text-align: center;
+                padding: 0;
+                margin-top: 0;
+                font-size: 15px;
+            }
+
+            .topleft {
+                position: absolute;
+                top: -40px;
+                left: -40px;
+                width: 250px;
+                height: auto; 
+            }
+        
+            .topright {
+                position: absolute;
+                top: -40px;
+                right: -40px;
+                width: 250px; 
+                height: auto;
+                transform: scaleX(-1);
+            }
+            .socials_img {
+                width: 90px;
+                margin-top: -15px;
+                transition: all 0.3s ease 0s;
+            }
+            .socials_img:hover {
+                transform: translateY(-2px);
+            }
+
+        </style>
+    </head>
+    <body style="font-family: avenir-next-medium, sans-serif;">
+        <div class="MENU">   
+            <div id="LOGO">
+                <a href="../index.html">
+                    <img src="../images/logopoke.png" class="images">
+                </a>
+            </div>
+            <ul class="BARRAMENU">
+                <li class="menu-item-princip"><a href="ordina_ora.html" class="menu-item-princip">ORDINA ORA</a></li>
+                <li class="menu-item"><a href="../index.html" class="item-link">HOME</a></li>
+                <li class="menu-item"><a href="menu.html" class="item-link">MENU</a></li>
+                <li class="menu-item"><a href="locations.html" class="item-link">LOCATIONS</a></li>
+                <li class="menu-item"><a href="chi_siamo.html" class="item-link" style="color:#333;">ABOUT US</a></li>
+            </ul>
+        </div>
+    <main>
+        <div class="CENTRALESFONDO" ></div>
+
+        <div class="homepokae_container" style="max-width: 1100px;">
+            <h2 style="font-size: 23px; color: #fff; margin-bottom: 65px; text-align: center; font-family: Avenir Next Medium, sans-serif;">
+                ABOUT US
+            </h2>
+            <h1 class="Titolozzi">
+                chi siamo
+            </h1>
+            <div id="aboutus_card">
+                <img src="../images/locations/me.png"  class="poke_image" id="aboutus_img">
+                <h3 class="poke_title" id="aboutus_tit" style="animation: anima-slogan 5s ease-in-out infinite alternate;">Pokae Party</h3>
+                <p id="aboutus_text">Siamo un team di appassionati di cibo e di divertimento, che hanno deciso 
+                    di unire le loro passioni per creare un'esperienza unica e divertente per i 
+                    nostri clienti. Il nostro obiettivo è di offrire una vasta gamma di opzioni di 
+                    cibo di alta qualità, in un ambiente accogliente e divertente.</p>
+                <p id="aboutus_contatti" style="margin-bottom: 35px;">
+                    <span style="text-shadow: 0 0 5px rgba(223, 223, 223, 0.35), 0 0 10px rgba(223, 223, 223, 0.3), 0 0 20px rgba(223, 223, 223, 0.25);">
+                        Contattaci per scoprire di più su di noi e sui nostri servizi:
+                    </span>
+                </p>
+                <p id="aboutus_contatti">Telefono: +01 911 911 </p>
+                <p id="aboutus_contatti">Email: s.nyx10000@gmail.com</p>
+                <p id="aboutus_contatti">Indirizzo: Viale Pokae, 10</p>
+                <img src="../images/locations/farfallosa.png" class="topleft" style="opacity: 0.9;">
+                <img src="../images/locations/farfallosa.png" class="topright" style="opacity: 0.9;">
+                <div>
+                    <a href="https://www.instagram.com" target="_blank"><img src="../images/locations/socials/ig.png" class="socials_img"></a>
+                    <a href="https://www.x.com" target="_blank"><img src="../images/locations/socials/twt.png" class="socials_img"></a>
+                    <a href="https://www.facebook.com" target="_blank"><img src="../images/locations/socials/fb.png" class="socials_img"></a>
+                </div>
+            </div>  
+        </div>
+
+    </main>
+        <footer>
+            <div id="footer-cont2" class="footer"> ✪ 2025 ⭒ pokae party ⭒ by dae ⭒</div>
+        </footer>
+        
+</body>
+</html>

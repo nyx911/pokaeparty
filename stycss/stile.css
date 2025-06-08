@@ -1,0 +1,499 @@
+/* Font principali: 3*/
+/* FONT : AVENIR NEXT */
+  @font-face {
+    font-family: 'Avenir Next Bold';
+      src: url('../fonts/avenir-next-bold.ttf') format('truetype'),
+  }
+  @font-face {
+    font-family: 'Avenir Next Bold Italic';
+      src: url('../fonts/avenir-next-bold-italic.ttf') format('truetype'),
+  }
+
+  @font-face {
+    font-family: 'Avenir Next Demibold';
+      src: url('../fonts/avenir-next-demibold.ttf') format('truetype'),
+  }
+  @font-face {
+    font-family: 'Avenir Next Demibold Italic';
+      src: url('../fonts/avenir-next-demibold-italic.ttf') format('truetype'),
+  }
+  @font-face {
+    font-family: 'Avenir Next Heavy';
+      src: url('../fonts/avenir-next-heavy.ttf') format('truetype'),
+  }
+  @font-face {
+    font-family: 'Avenir Next Heavy Italic';
+      src: url('../fonts/avenir-next-heavy-italic.ttf') format('truetype'),
+  }
+  @font-face {
+    font-family: 'Avenir Next Italic';
+      src: url('../fonts/avenir-next-italic.ttf') format('truetype'),
+  }
+  @font-face {
+    font-family: 'Avenir Next Medium';
+      src: url('../fonts/avenir-next-medium.ttf') format('truetype'),
+  }
+  @font-face {
+    font-family: 'Avenir Next Medium Condensed Italic';
+      src: url('../fonts/avenir-next-medium-condensed-italic.ttf') format('truetype'),
+  }
+  @font-face {
+    font-family: 'Avenir Next Medium Italic';
+      src: url('../fonts/avenir-next-medium-italic.ttf') format('truetype'),
+  }
+  @font-face {
+    font-family: 'Avenir Next Regular';
+      src: url('../fonts/avenir-next-regular.ttf') format('truetype'),
+  }
+  @font-face {
+    font-family: 'Avenir Next Ultra Light';
+      src: url('../fonts/avenir-next-ultra-light.ttf') format('truetype'),
+  }
+  @font-face {
+    font-family: 'Avenir Next Ultra Light Italic';
+      src: url('../fonts/avenir-next-ultra-light-italic.ttf') format('truetype'),
+  }
+
+/* FONT: KESSEL */
+  @font-face {
+    font-family: 'Kessel 105 text book';
+      src: url('../fonts/kessel-105-text-book.ttf') format('truetype'),
+  }
+
+/* FONT: LOVE*/
+  @font-face {
+    font-family: 'Love';
+      src: url('../fonts/love.ttf') format('truetype'),
+  }
+
+html::-webkit-scrollbar {
+  display: none; 
+}
+
+.CENTRALESFONDO {
+  position: fixed; 
+  top: 40px;      
+  left: 100px; 
+  width: calc(100% - 200px);
+  height: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  box-sizing: border-box; 
+  color: #000;
+  white-space: nowrap;
+  z-index: -1;     
+}
+
+/* CLASSE PRINCIPALE del MENU DI NAVIGAZIONE */
+.MENU {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: #ff8080;
+  box-shadow: 0px 0.3px 20px rgba(200, 200, 200, 0.3);
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+/* LOGO con href HOME */
+#LOGO{
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    top: 6px;
+    left: 30px;
+    text-align: center;
+}
+/* LOGO CLICCATO*/ 
+#LOGO:active {
+  transform: scale(1.2); 
+  transition: transform 0.2s ease-in-out;
+}
+
+/* classe che comprende le voci del menu di navigazione */
+.BARRAMENU {
+  margin-left: 90px;
+  list-style: none;  
+  display: flex; 
+  align-items: center;
+}
+
+/* VOCI DEL MENU DI NAVIGAZIONE */
+.menu-item {
+  margin: 14px 50px;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+/* PULSANTE CON 'ORDINA ORA' */
+.menu-item-princip {
+  padding: 9px 14px;
+  letter-spacing: 1px;
+  font-size: 17px;
+  color: #ff8080;
+  font-family: 'Avenir Next', sans-serif;
+  background-color: #fff;
+  border: none;
+  border-radius: 65px;
+  transition: all 0.3s ease 0s;
+  outline: none;
+}
+  /* HOVER */
+  .menu-item-princip:hover {
+    background-color: #fff;
+    color:  #333;
+    transform: scale(1.07);
+    transition: transform 0.3s ease-in-out;
+  }
+/* VOCI MENU DI NAVIGAZIONE : HOME > MENU > LOCATIONS > CHI SIAMO > CONTATTI */
+.item-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  transition: color 0.3s ease;
+}
+  /* HOVER */
+  .item-link:hover {
+    color:  #333;
+  }
+
+/*FOOTER IN FONDO ALLA PAGINA*/
+  .footer {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    box-sizing: border-box; 
+    color: #fff;;
+    white-space: nowrap;
+  }
+
+  #footer-cont {
+    background-color: #ff8080; 
+    width: 100%; 
+    height: 300px;
+    box-shadow: 0px 0.2px 7px #ff8080;
+  }
+
+  #footer-cont #span1 {
+    font-size: 70px;
+    font-family: 'Love', sans-serif;
+    font-weight: 300;
+    text-align: center; 
+    width: 80%; 
+    letter-spacing: 2px;
+    animation: anima-slogan 5s ease-in-out infinite alternate;
+    text-rendering: optimizeSpeed;
+    text-shadow:
+    0 0 5px    rgba(0, 0, 0, 0.7),  
+    0 0 10px   rgba(0, 0, 0, 0.6),  
+    0 0 20px   rgba(0, 0, 0, 0.5),  
+    0 0 40px   rgba(0, 0, 0, 0.4),  
+    0 0 80px   rgba(0, 0, 0, 0.3),  
+    0 0 100px  rgba(0, 0, 0, 0.2),  
+    0 0 150px  rgba(0, 0, 0, 0.15);  
+  }
+
+  /* ANIMAZIONE */
+  @keyframes anima-slogan {
+    0% { transform: translateX(-4px) translateY(-2ppx); }
+    25% { transform: translateX(0px) translateY(2px); }
+    50% { transform: translateX(4px) translateY(0px); }
+    75% { transform: translateX(0px) translateY(-2ppx); }
+    100% { transform: translateX(-4px) translateY(-2px) ; }
+  }
+
+  #footer-cont2 {
+    background-color: #ff8080;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ), #ff8080;
+    width: 100%; 
+    height: 40px;
+    color: #ffcccc;
+    font-family: avenir-next-regular;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    box-shadow: 0px 8px 15px rgba(255, 128, 128, 0.8);
+  }
+
+
+/* BUTTON */
+button {
+  padding: 18px 18px;
+  min-width: 180px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: #fff;
+  font-family: 'Avenir Next', sans-serif;
+  background-color: #ff9999;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 0.3px 20px rgba(200, 200, 200, 0.3);
+  transition: all 0.3s ease 0s;
+  outline: none;
+}
+.button-clmn {
+  display: flex;          
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+button:hover {
+  background-color: #fff;
+  box-shadow: 0px 8px 15px rgba(255, 128, 128, 0.4);
+  color: #333;
+  transform: translateY(-4px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+#CENTRALE {
+  margin-top: 40px;
+  display: flex;
+  min-height: 425px;
+  text-align: center;
+  justify-content: center; 
+  align-items: center; 
+  box-sizing: border-box; 
+  color: #fff;
+  white-space: nowrap;
+}
+
+#CENTRALE2 {
+  margin-top: 130px;
+  min-height: 130px;
+  text-align: center;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  box-sizing: border-box; 
+  color: #fff;
+  white-space: nowrap;
+}
+
+
+/* MENU PAGE */
+
+  /* SCELTA DELLA CASA */
+    .homepokae_container {
+      padding: 65px 20px;
+      max-width: 1300px;
+      margin: 40px auto 0 auto;
+    }
+    
+    .Titolozzi {
+      font-size: 60px;
+      color: #ff9999;
+      margin-bottom: 100px;
+      text-align: center; 
+      font-family: Love;
+      text-shadow: 
+        0 0 5px rgba(255, 128, 128, 0.2),
+        0 0 10px rgba(255, 128, 128, 0.15),
+        0 0 20px rgba(255, 128, 128, 0.1);
+    }
+
+    /* CONTAINER POKE*/
+    .poke_container {
+      display: flex;
+      gap: 35px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    /*CARD 1 POKE*/
+    .poke_card {
+      background-color: rgba(255, 153, 153, 0.5);  /* #ff9999 */
+      border-radius: 15px;
+      min-height: 419px;
+      position: relative;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      flex: 1;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      transition: all 0.3s ease 0s;
+      flex-direction: column;
+    }
+
+    .poke_card:hover {
+      box-shadow: 0px 8px 15px rgba(255, 128, 128, 0.4);
+      transform: translateY(-2px);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    /* POKE IMAGE */
+    .poke_image {
+      margin: -100px auto 10px auto;
+      height: auto;
+      border-radius: 4px;  
+    }
+
+    /* TITOLI poke */
+    .poke_title {
+      font-family: Love;
+      font-size: 31px;
+      color: #ffffff;
+      margin: -8px 0 5px 0;
+    }
+
+    /* TESTO ingredienti */
+    .poke_ingredients {
+      font-family: 'Avenir Next Ultra Light', sans-serif;
+      padding: 10px;
+      font-size: 17px;
+      letter-spacing: 0.05vh ;
+      color: #e0e0e0;
+      margin: 25px 15px 0 15px;
+    }
+  /* fine SCELTA DELLA CASA */
+
+  /* CREA LA TUA BOWL */
+  .OpzioniCrea {
+    padding: 20px 20px;
+    max-width: 1350px;
+    margin: 15px auto 0 auto;
+    position: relative; 
+    text-align: center;
+  }
+
+  .OpzioniCrea_cont {
+    display: flex;          
+    flex-wrap: wrap;          
+    gap: 18px;             
+    justify-content: center;
+    padding: 17px;
+  }
+
+  .OpzioniCrea_titles {
+    font-size: 48px;
+    color: #dfdfdf;
+    margin-top: 47px;
+    text-align: center;
+    font-family: Love;
+    text-shadow:
+      0 0 5px rgba(223, 223, 223, 0.2),
+      0 0 10px rgba(223, 223, 223, 0.15),
+      0 0 20px rgba(223, 223, 223, 0.1);
+  }
+
+  .OpzioniCrea_cardina {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgba(255, 153, 153, 0.3);  
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    background-color: rgba(223, 223, 223, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    z-index: 1;
+    display: flex;
+  }
+
+  .OpzioniCrea_cardina:hover {
+    transform: translateY(-4px);
+    transition: transform 0.3s ease-in-out;
+    box-shadow:
+      0 0 3px rgba(223, 223, 223, 0.1),
+      0 0 6px rgba(223, 223, 223, 0.08),
+      0 0 12px rgba(223, 223, 223, 0.05);
+  }
+
+  .OpzioniCrea_info {
+    color: #ffffff;
+    font-family: "Avenir Next Ultra Light";
+    font-size: 13px;
+    letter-spacing: 0.13vh;
+    text-align: center;
+    padding: 14px;
+    margin: auto;
+  }
+  
+  .OpzioniCrea_img {
+    position: absolute;
+    max-width: 70%;
+    top: 10px;
+    right: 10px;
+    opacity: 1;
+    filter: none;
+    z-index: 2;
+    mix-blend-mode: normal;
+  }
+
+  /* POP UP degli ALLERGENI */
+  .allergene {
+    position: absolute;
+    top: 11px;
+    right: 8px;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Avenir Next Ultra Light", sans-serif;
+    font-size: 13px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .popup {
+    display: none; /* lo nasconde */
+    position: absolute;
+    top: -60px;
+    left: 11px;
+    background-color: #dfdfdf50;
+    text-shadow: #dfdfdf;
+    border: 1px solid rgba(255, 153, 153, 0.3);
+    border-radius: 15px;
+    font-size: 11px;
+    text-decoration: none;
+    text-align: left;
+    letter-spacing: 0.1vh;
+    padding: 12px;            
+    width: 128px;              
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1); 
+    z-index: 4;
+    backdrop-filter: blur(3px);
+  }
+
+  .allergene:hover .popup {
+    display: block;
+  }
+
+  
+  .OpzioniCrea_img {
+    padding: 20px;
+    position: absolute;
+    max-width: 70%;
+    top: 10px;
+    right: 10px;
+    opacity: 1;
+    filter: none;
+    z-index: 2;
+    mix-blend-mode: normal;
+    margin: 0 auto;
+    display: block;
+  }
+
+/* FINE MENU PAGE */
